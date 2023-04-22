@@ -1,0 +1,85 @@
+.comment__form {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    padding: 1.25rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.send-btn {
+    color: hsl(228, 33%, 97%);
+    border: none;
+    border-radius: 6px;
+    padding-block: 0.65rem;
+    width: 100px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    height: max-content;
+    background-color: hsl(238, 40%, 52%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-text:default {
+    color: hsl(238, 40%, 52%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+
+.send-btn:hover {
+    opacity: 0.8;
+}
+
+.send-btn[data-loading='true'] {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.input-text {
+    width: 100%;
+    border: 1px solid hsl(223, 19%, 93%);
+    font-size: 0.95rem;
+    border-radius: 6px;
+    font-weight: 400;
+    padding: 0.65rem 1.25rem;
+    color: hsl(212, 24%, 26%);
+    resize: none;
+}
+
+.input-text:focus {
+    outline: 2px solid hsl(233, 4%, 64%);
+}
+
+.input-text::placeholder {
+    color: hsl(211, 10%, 45%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.no-user {
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(211, 10%, 45%);
+    font-size: small;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

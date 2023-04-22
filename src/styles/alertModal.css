@@ -1,0 +1,81 @@
+.alert-modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-modal.show-modal {
+    display: flex;
+}
+
+.modal-content {
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    animation: animateTop 0.3s ease-in-out;
+}
+
+@keyframes animateTop {
+    from {
+        top: -10px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(212, 24%, 26%);
+    margin-bottom: 1rem;
+}
+
+.modal-message {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(211, 10%, 45%);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.modal-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal-controls>* {
+    border: none;
+    padding: 0.75rem;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background-color: hsl(211, 10%, 45%);
+}
+
+.signin-btn {
+    background-color: hsl(358, 79%, 66%);
+}

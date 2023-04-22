@@ -1,0 +1,74 @@
+.navbar {
+    width: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    backdrop-filter: blur(6px);
+    background-color: hsl(228, 33%, 97%, 0.4);
+}
+
+.navbar__wrapper {
+    width: 100vw;
+    max-width: 80%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 0.5rem;
+}
+
+.nav__list {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__item {
+    list-style: none;
+    color: hsl(211, 10%, 45%);
+    cursor: pointer;
+    font-size: small;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 0.65rem 1rem;
+    border-radius: 4px;
+    border: 1px solid hsl(0, 0%, 90%);
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav__item:has(:focus) {
+    border-color: hsl(257, 49%, 47%);
+}
+
+.user {
+    color: hsl(211, 10%, 45%);
+    font-size: small;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50%;
+    border: 1px solid hsl(257, 49%, 47%);
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(257, 49%, 47%);
+    color: white;
+    cursor: pointer;
+}
+
+.user:has(.avatar) {
+    object-fit: cover;
+}

@@ -1,0 +1,190 @@
+.comment {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 6px;
+    padding: 1.45rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.score__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(228, 33%, 97%);
+    border-radius: 8px;
+    padding-block: 0.75rem;
+    min-width: 32px;
+    height: min-content;
+    gap: 1rem;
+    color: hsl(238, 40%, 52%);
+}
+
+.score__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.score__button:hover {
+    fill: hsl(238, 40%, 52%);
+}
+
+.score {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user__info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: hsl(212, 24%, 26%);
+}
+
+.user-image {
+    width: 28px;
+    height: 28px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: hsl(257, 49%, 47%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    user-select: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: small;
+}
+
+.is-you {
+    background-color: hsl(238, 40%, 52%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    padding: 0.125rem 0.45rem;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.created-at {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: hsl(211, 10%, 45%);
+}
+
+.comment__controls {
+    position: absolute;
+    display: flex;
+    top: 1.45rem;
+    right: 1.45rem;
+    height: min-content;
+    gap: 1rem;
+}
+
+.comment__controls>* {
+    border: none;
+    background-color: transparent;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.reply,
+.edit {
+    color: hsl(238, 40%, 52%);
+}
+
+.delete {
+    color: hsl(358, 79%, 66%);
+}
+
+.comment__control:hover {
+    opacity: 0.4;
+}
+
+.comment__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comment__text {
+    font-size: 0.95rem;
+    color: hsl(211, 10%, 45%);
+    line-height: 1.5;
+}
+
+.reply-to {
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+}
+
+
+@media screen and (width <=768px) {
+    .user__info {
+        gap: 0.5rem;
+    }
+
+    .comment__body {
+        gap: 0.5rem;
+    }
+
+    .comment {
+        padding: 1rem;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
+
+    .comment__controls {
+        top: calc(100% - 2.5rem);
+        right: 1rem;
+    }
+
+    .score__container {
+        width: min-content;
+        padding-inline: 2rem;
+        gap: 1rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.edit-btn {
+    color: hsl(228, 33%, 97%);
+    border: none;
+    border-radius: 6px;
+    padding-block: 0.65rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    width: 100px;
+    height: max-content;
+    background-color: hsl(238, 40%, 52%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
